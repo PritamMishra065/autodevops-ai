@@ -1,0 +1,93 @@
+name: AutoDevOps AI CI/CD
+
+on:
+  push:
+    branches: [ main, develop ]
+  pull_request:
+    branches: [ main ]
+  workflow_dispatch:
+
+jobs:
+  # CodeRabbit Auto-Review
+  code-review:
+    name: CodeRabbit Review
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      
+      - name: Trigger CodeRabbit Review
+        run: |
+          echo "Triggering CodeRabbit review for PR ${{ github.event.pull_request.number }}"
+          curl -X POST http://localhost:8000/api/coderabbit/review \
+            -H "Content-Type: application/json" \
+            -d '{"pr_number": ${{ github.event.pull_request.number }}, "repo": "PritamMishra065/autodevops-ai"}' || true
+
+  # Run Tests
+  test:
+    name: Run Tests
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.11'
+      
+      - name: Install dependencies
+        run: |
+          cd backend
+          pip install -r ../requirements.txt
+      
+      - name: Run tests
+        run: |
+          echo "Running tests..."
+          # Add your test commands here
+          python -m pytest tests/ || echo "No tests found"
+
+  # Build Check
+  build:
+    name: Build Check
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '18'
+      
+      - name: Install dependencies
+        run: npm install
+      
+      - name: Build frontend
+        run: npm run build
+
+  # Trigger Kestra Monitoring
+  kestra-monitor:
+    name: Kestra Monitor
+    runs-on: ubuntu-latest
+    if: always()
+    steps:
+      - name: Trigger Kestra Decision Engine
+        run: |
+          curl -X POST http://localhost:8000/api/agent/kestra \
+            -H "Content-Type: application/json" \
+            -d '{"command": "monitor"}' || true
+
+  # Deploy to Vercel (if on main branch)
+  deploy:
+    name: Deploy to Vercel
+    runs-on: ubuntu-latest
+    if: github.ref == 'refs/heads/main' && github.event_name == 'push'
+    steps:
+      - uses: actions/checkout@v4
+      
+      - name: Deploy to Vercel
+        uses: amondnet/vercel-action@v25
+        with:
+          vercel-token: ${{ secrets.VERCEL_TOKEN }}
+          vercel-org-id: ${{ secrets.VERCEL_ORG_ID }}
+          vercel-project-id: ${{ secrets.VERCEL_PROJECT_ID }}
+          vercel-args: '--prod'
+

@@ -1,1 +1,275 @@
-[]
+[
+  {
+    "type": "create_pull_request",
+    "status": "completed",
+    "agent": "cline",
+    "description": "Created PR #42: Add user authentication feature",
+    "timestamp": "2025-01-15T10:30:00.000Z",
+    "pr_number": 42,
+    "branch": "feature/user-auth",
+    "author": "developer@example.com"
+  },
+  {
+    "type": "run_cline",
+    "status": "completed",
+    "agent": "cline",
+    "description": "Generated authentication middleware",
+    "timestamp": "2025-01-15T10:32:15.000Z"
+  },
+  {
+    "type": "code_review_started",
+    "status": "running",
+    "agent": "coderabbit",
+    "description": "Started automated code review for PR #42",
+    "timestamp": "2025-01-15T10:35:00.000Z",
+    "pr_number": 42
+  },
+  {
+    "type": "run_coderabbit",
+    "status": "completed",
+    "agent": "coderabbit",
+    "description": "Completed code review analysis",
+    "timestamp": "2025-01-15T10:37:45.000Z"
+  },
+  {
+    "type": "security_scan",
+    "status": "completed",
+    "agent": "coderabbit",
+    "description": "Security vulnerability scan completed",
+    "timestamp": "2025-01-15T10:38:20.000Z",
+    "pr_number": 42,
+    "vulnerabilities_found": 0
+  },
+  {
+    "type": "run_kestra",
+    "status": "completed",
+    "agent": "kestra",
+    "description": "Workflow orchestration for PR #42",
+    "timestamp": "2025-01-15T10:40:00.000Z"
+  },
+  {
+    "type": "run_oumi",
+    "status": "completed",
+    "agent": "oumi",
+    "description": "Multi-agent coordination for PR #42",
+    "timestamp": "2025-01-15T10:42:00.000Z"
+  },
+  {
+    "type": "pr_approved",
+    "status": "completed",
+    "agent": "coderabbit",
+    "description": "PR #42 approved by CodeRabbit agent",
+    "timestamp": "2025-01-15T11:00:00.000Z",
+    "pr_number": 42
+  },
+  {
+    "type": "merge_pull_request",
+    "status": "pending",
+    "agent": "kestra",
+    "description": "Merging PR #42 into main branch",
+    "timestamp": "2025-01-15T11:05:00.000Z",
+    "pr_number": 42
+  },
+  {
+    "type": "github_pr_tracked",
+    "status": "completed",
+    "agent": "github",
+    "description": "Tracked PR #1: chore: add dummy PR placeholder file",
+    "timestamp": "2025-12-12T22:15:58Z",
+    "pr_number": 1,
+    "pr_state": "open",
+    "pr_url": "https://github.com/PritamMishra065/autodevops-ai/pull/1"
+  },
+  {
+    "type": "github_pr_tracked",
+    "status": "completed",
+    "agent": "github",
+    "description": "Tracked PR #1: chore: add dummy PR placeholder file",
+    "timestamp": "2025-12-12T22:15:58Z",
+    "pr_number": 1,
+    "pr_state": "open",
+    "pr_url": "https://github.com/PritamMishra065/autodevops-ai/pull/1"
+  },
+  {
+    "type": "github_pr_tracked",
+    "status": "completed",
+    "agent": "github",
+    "description": "Tracked PR #1: chore: add dummy PR placeholder file",
+    "timestamp": "2025-12-12T22:15:58Z",
+    "pr_number": 1,
+    "pr_state": "open",
+    "pr_url": "https://github.com/PritamMishra065/autodevops-ai/pull/1"
+  },
+  {
+    "type": "github_pr_tracked",
+    "status": "completed",
+    "agent": "github",
+    "description": "Tracked PR #1: chore: add dummy PR placeholder file",
+    "timestamp": "2025-12-12T22:15:58Z",
+    "pr_number": 1,
+    "pr_state": "open",
+    "pr_url": "https://github.com/PritamMishra065/autodevops-ai/pull/1"
+  },
+  {
+    "type": "github_pr_tracked",
+    "status": "completed",
+    "agent": "github",
+    "description": "Tracked PR #1: chore: add dummy PR placeholder file",
+    "timestamp": "2025-12-12T22:15:58Z",
+    "pr_number": 1,
+    "pr_state": "open",
+    "pr_url": "https://github.com/PritamMishra065/autodevops-ai/pull/1"
+  },
+  {
+    "type": "github_pr_tracked",
+    "status": "completed",
+    "agent": "github",
+    "description": "Tracked PR #1: chore: add dummy PR placeholder file",
+    "timestamp": "2025-12-12T22:15:58Z",
+    "pr_number": 1,
+    "pr_state": "open",
+    "pr_url": "https://github.com/PritamMishra065/autodevops-ai/pull/1"
+  },
+  {
+    "type": "github_pr_tracked",
+    "status": "completed",
+    "agent": "github",
+    "description": "Tracked PR #1: chore: add dummy PR placeholder file",
+    "timestamp": "2025-12-12T22:15:58Z",
+    "pr_number": 1,
+    "pr_state": "open",
+    "pr_url": "https://github.com/PritamMishra065/autodevops-ai/pull/1"
+  },
+  {
+    "type": "github_pr_tracked",
+    "status": "completed",
+    "agent": "github",
+    "description": "Tracked PR #1: chore: add dummy PR placeholder file",
+    "timestamp": "2025-12-12T22:15:58Z",
+    "pr_number": 1,
+    "pr_state": "open",
+    "pr_url": "https://github.com/PritamMishra065/autodevops-ai/pull/1"
+  },
+  {
+    "type": "run_cline",
+    "status": "completed",
+    "agent": "cline",
+    "timestamp": "2025-12-13T03:51:09.470334"
+  },
+  {
+    "type": "run_coderabbit",
+    "status": "failed",
+    "agent": "coderabbit",
+    "timestamp": "2025-12-13T03:51:11.801370"
+  },
+  {
+    "type": "run_kestra",
+    "status": "completed",
+    "agent": "kestra",
+    "timestamp": "2025-12-13T03:51:13.531554"
+  },
+  {
+    "type": "run_oumi",
+    "status": "completed",
+    "agent": "oumi",
+    "timestamp": "2025-12-13T03:51:15.297353"
+  },
+  {
+    "type": "github_pr_tracked",
+    "status": "completed",
+    "agent": "github",
+    "description": "Tracked PR #1: chore: add dummy PR placeholder file",
+    "timestamp": "2025-12-12T22:24:28Z",
+    "pr_number": 1,
+    "pr_state": "open",
+    "pr_url": "https://github.com/PritamMishra065/autodevops-ai/pull/1"
+  },
+  {
+    "type": "run_cline",
+    "status": "completed",
+    "agent": "cline",
+    "timestamp": "2025-12-13T03:59:07.465257"
+  },
+  {
+    "type": "run_cline",
+    "status": "completed",
+    "agent": "cline",
+    "timestamp": "2025-12-13T03:59:09.123304"
+  },
+  {
+    "type": "run_coderabbit",
+    "status": "failed",
+    "agent": "coderabbit",
+    "timestamp": "2025-12-13T03:59:10.158420"
+  },
+  {
+    "type": "run_kestra",
+    "status": "completed",
+    "agent": "kestra",
+    "timestamp": "2025-12-13T03:59:11.641754"
+  },
+  {
+    "type": "run_oumi",
+    "status": "completed",
+    "agent": "oumi",
+    "timestamp": "2025-12-13T03:59:12.823355"
+  },
+  {
+    "type": "github_pr_tracked",
+    "status": "completed",
+    "agent": "github",
+    "description": "Tracked PR #1: chore: add dummy PR placeholder file",
+    "timestamp": "2025-12-12T22:24:28Z",
+    "pr_number": 1,
+    "pr_state": "open",
+    "pr_url": "https://github.com/PritamMishra065/autodevops-ai/pull/1"
+  },
+  {
+    "type": "github_pr_tracked",
+    "status": "completed",
+    "agent": "github",
+    "description": "Tracked PR #1: chore: add dummy PR placeholder file",
+    "timestamp": "2025-12-12T22:24:28Z",
+    "pr_number": 1,
+    "pr_state": "open",
+    "pr_url": "https://github.com/PritamMishra065/autodevops-ai/pull/1"
+  },
+  {
+    "type": "github_pr_tracked",
+    "status": "completed",
+    "agent": "github",
+    "description": "Tracked PR #1: chore: add dummy PR placeholder file",
+    "timestamp": "2025-12-12T22:24:28Z",
+    "pr_number": 1,
+    "pr_state": "open",
+    "pr_url": "https://github.com/PritamMishra065/autodevops-ai/pull/1"
+  },
+  {
+    "type": "github_pr_tracked",
+    "status": "completed",
+    "agent": "github",
+    "description": "Tracked PR #1: chore: add dummy PR placeholder file",
+    "timestamp": "2025-12-12T22:24:28Z",
+    "pr_number": 1,
+    "pr_state": "open",
+    "pr_url": "https://github.com/PritamMishra065/autodevops-ai/pull/1"
+  },
+  {
+    "type": "run_coderabbit",
+    "status": "failed",
+    "agent": "coderabbit",
+    "timestamp": "2025-12-13T04:01:50.326421"
+  },
+  {
+    "type": "run_cline",
+    "status": "completed",
+    "agent": "cline",
+    "timestamp": "2025-12-13T04:01:52.258279"
+  },
+  {
+    "type": "run_kestra",
+    "status": "completed",
+    "agent": "kestra",
+    "timestamp": "2025-12-13T04:01:53.589735"
+  }
+]

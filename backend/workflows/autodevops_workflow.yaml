@@ -1,0 +1,54 @@
+id: autodevops_main
+namespace: autodevops.ai
+
+description: Main AutoDevOps AI workflow - Autonomous decision making and orchestration
+
+tasks:
+  # Monitor GitHub PRs
+  - id: monitor_prs
+    type: io.kestra.plugin.github.pullrequests.List
+    url: https://github.com/PritamMishra065/autodevops-ai
+    state: open
+    outputs:
+      prs: "{{ outputs.monitor_prs.body }}"
+  
+  # Trigger CodeRabbit review for new PRs
+  - id: trigger_coderabbit
+    type: io.kestra.plugin.http.Request
+    uri: http://localhost:8000/api/coderabbit/review
+    method: POST
+    body:
+      pr_number: "{{ outputs.monitor_prs.prs[0].number }}"
+      repo: "PritamMishra065/autodevops-ai"
+    condition: "{{ outputs.monitor_prs.prs | length > 0 }}"
+  
+  # Check build status
+  - id: check_build
+    type: io.kestra.plugin.http.Request
+    uri: http://localhost:8000/api/logs
+    method: GET
+  
+  # Trigger Kestra decision engine
+  - id: kestra_decide
+    type: io.kestra.plugin.http.Request
+    uri: http://localhost:8000/api/agent/kestra
+    method: POST
+    body:
+      command: monitor
+  
+  # Auto-fix if build fails
+  - id: auto_fix
+    type: io.kestra.plugin.http.Request
+    uri: http://localhost:8000/api/cline/fix
+    method: POST
+    condition: "{{ outputs.check_build.body | contains('error') }}"
+  
+  # Generate feature if requested
+  - id: generate_feature
+    type: io.kestra.plugin.http.Request
+    uri: http://localhost:8000/api/feature
+    method: POST
+    body:
+      feature: "{{ inputs.feature }}"
+    condition: "{{ inputs.feature is defined }}"
+

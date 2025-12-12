@@ -1,5 +1,22 @@
-version: 1
+id: trout_428248
+namespace: company.team
+
 tasks:
-  - id: example
-    type: script
-    script: echo "Kestra workflow placeholder"
+  - id: mail
+    type: io.kestra.plugin.googleworkspace.mail.List
+    clientId: coderabbit
+    clientSecret: review
+    refreshToken: "123"
+  - id: pr_review
+    type: io.kestra.plugin.ollama.cli.OllamaCLI
+    commands:
+      - read the mail and create an issue on github
+  - id: issue
+    type: io.kestra.plugin.github.issues.Create
+  - id: send
+    type: io.kestra.plugin.googleworkspace.mail.Send
+    clientId: pritammishra065@gmail.com
+    clientSecret: pr
+    refreshToken: "123"
+    to:
+      - pritammishra065@gmail.com

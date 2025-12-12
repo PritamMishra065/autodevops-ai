@@ -1,1 +1,96 @@
-[]
+[
+  {
+    "level": "info",
+    "message": "PR #42 created: Add user authentication feature",
+    "timestamp": "2025-01-15T10:30:00.000Z",
+    "agent": "cline",
+    "pr_number": 42
+  },
+  {
+    "level": "info",
+    "message": "Analyzing code changes in PR #42",
+    "timestamp": "2025-01-15T10:35:00.000Z",
+    "agent": "coderabbit",
+    "pr_number": 42
+  },
+  {
+    "level": "info",
+    "message": "Found 3 files changed: +245 lines, -12 lines",
+    "timestamp": "2025-01-15T10:35:30.000Z",
+    "agent": "coderabbit",
+    "pr_number": 42
+  },
+  {
+    "level": "warning",
+    "message": "Potential security issue: Missing input validation in auth middleware",
+    "timestamp": "2025-01-15T10:36:15.000Z",
+    "agent": "coderabbit",
+    "pr_number": 42,
+    "file": "backend/middleware/auth.py",
+    "line": 45
+  },
+  {
+    "level": "info",
+    "message": "Running unit tests for PR #42",
+    "timestamp": "2025-01-15T10:37:00.000Z",
+    "agent": "kestra",
+    "pr_number": 42
+  },
+  {
+    "level": "success",
+    "message": "All tests passed: 15/15",
+    "timestamp": "2025-01-15T10:37:45.000Z",
+    "agent": "kestra",
+    "pr_number": 42
+  },
+  {
+    "level": "info",
+    "message": "Code review completed for PR #42",
+    "timestamp": "2025-01-15T10:38:00.000Z",
+    "agent": "coderabbit",
+    "pr_number": 42
+  },
+  {
+    "level": "info",
+    "message": "Security scan completed: No critical vulnerabilities found",
+    "timestamp": "2025-01-15T10:38:20.000Z",
+    "agent": "coderabbit",
+    "pr_number": 42
+  },
+  {
+    "level": "info",
+    "message": "Coordinating agents for PR #42 workflow",
+    "timestamp": "2025-01-15T10:40:00.000Z",
+    "agent": "oumi",
+    "pr_number": 42
+  },
+  {
+    "level": "success",
+    "message": "PR #42 approved and ready to merge",
+    "timestamp": "2025-01-15T11:00:00.000Z",
+    "agent": "coderabbit",
+    "pr_number": 42
+  },
+  {
+    "level": "info",
+    "message": "Initiating merge process for PR #42",
+    "timestamp": "2025-01-15T11:05:00.000Z",
+    "agent": "kestra",
+    "pr_number": 42
+  },
+  {
+    "level": "error",
+    "message": "Merge conflict detected in backend/config.py",
+    "timestamp": "2025-01-15T11:05:30.000Z",
+    "agent": "kestra",
+    "pr_number": 42,
+    "file": "backend/config.py"
+  },
+  {
+    "level": "info",
+    "message": "Resolving merge conflict automatically",
+    "timestamp": "2025-01-15T11:06:00.000Z",
+    "agent": "cline",
+    "pr_number": 42
+  }
+]

@@ -1,1 +1,53 @@
-[]
+[
+  {
+    "title": "PR #42: Add user authentication feature",
+    "pull_request": "#42",
+    "reviewer": "CodeRabbit AI",
+    "status": "approved",
+    "rating": 4,
+    "timestamp": "2025-01-15T10:38:00.000Z",
+    "comments": "Overall good implementation. The authentication flow is well-structured and follows security best practices. Minor suggestions below.",
+    "suggestions": [
+      "Add input validation for email format in the registration endpoint",
+      "Consider adding rate limiting to prevent brute force attacks",
+      "Add unit tests for edge cases in password validation",
+      "Document the JWT token expiration policy"
+    ],
+    "files_reviewed": 3,
+    "lines_added": 245,
+    "lines_removed": 12,
+    "issues_found": 1,
+    "issues_critical": 0
+  },
+  {
+    "title": "Security Review: Authentication Middleware",
+    "pull_request": "#42",
+    "reviewer": "CodeRabbit Security Scanner",
+    "status": "approved",
+    "rating": 5,
+    "timestamp": "2025-01-15T10:38:20.000Z",
+    "comments": "Security scan completed successfully. No critical vulnerabilities detected. The implementation uses secure password hashing (bcrypt) and proper JWT handling.",
+    "suggestions": [
+      "Consider implementing 2FA for enhanced security",
+      "Add session timeout configuration"
+    ],
+    "files_reviewed": 2,
+    "security_score": 95
+  },
+  {
+    "title": "Code Quality Review",
+    "pull_request": "#42",
+    "reviewer": "CodeRabbit Quality Checker",
+    "status": "approved",
+    "rating": 4,
+    "timestamp": "2025-01-15T10:39:00.000Z",
+    "comments": "Code quality is good. Follows project conventions and maintains consistency. Some minor refactoring opportunities identified.",
+    "suggestions": [
+      "Extract magic numbers into constants",
+      "Add type hints for better code documentation",
+      "Consider using dependency injection for better testability"
+    ],
+    "code_quality_score": 87,
+    "maintainability_index": 82
+  }
+]
