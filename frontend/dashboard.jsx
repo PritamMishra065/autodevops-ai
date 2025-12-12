@@ -20,6 +20,7 @@ import IssueCreator from './components/IssueCreator'
 import IssuesList from './components/IssuesList'
 import KestraMonitor from './components/KestraMonitor'
 import FeatureGenerator from './components/FeatureGenerator'
+import WorkflowExecutor from './components/WorkflowExecutor'
 import { apiService } from './services/api'
 
 const agents = [
@@ -304,6 +305,8 @@ export default function Dashboard() {
         )}
 
         {activeTab === 'kestra' && <KestraMonitor />}
+
+        {activeTab === 'workflows' && <WorkflowExecutor />}
 
         {activeTab === 'agents' && (
           <div>
