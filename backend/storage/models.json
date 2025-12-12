@@ -1,1 +1,46 @@
-[]
+[
+  {
+    "name": "GPT-4",
+    "model": "gpt-4",
+    "provider": "OpenAI",
+    "version": "4.0",
+    "status": "active",
+    "description": "Primary model for code generation and analysis",
+    "capabilities": ["code_generation", "code_review", "documentation"],
+    "max_tokens": 8192,
+    "cost_per_1k_tokens": 0.03
+  },
+  {
+    "name": "Claude 3 Opus",
+    "model": "claude-3-opus-20240229",
+    "provider": "Anthropic",
+    "version": "3.0",
+    "status": "active",
+    "description": "Advanced model for complex code reviews and refactoring",
+    "capabilities": ["code_review", "refactoring", "architecture_analysis"],
+    "max_tokens": 200000,
+    "cost_per_1k_tokens": 0.015
+  },
+  {
+    "name": "CodeLlama",
+    "model": "codellama-34b",
+    "provider": "Meta",
+    "version": "34b",
+    "status": "active",
+    "description": "Specialized code generation model",
+    "capabilities": ["code_generation", "code_completion"],
+    "max_tokens": 16384,
+    "cost_per_1k_tokens": 0.001
+  },
+  {
+    "name": "GPT-3.5 Turbo",
+    "model": "gpt-3.5-turbo",
+    "provider": "OpenAI",
+    "version": "3.5",
+    "status": "active",
+    "description": "Fast and cost-effective model for simple tasks",
+    "capabilities": ["code_generation", "documentation", "simple_reviews"],
+    "max_tokens": 4096,
+    "cost_per_1k_tokens": 0.002
+  }
+]
