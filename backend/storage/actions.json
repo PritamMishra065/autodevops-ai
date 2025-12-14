@@ -271,5 +271,125 @@
     "status": "completed",
     "agent": "kestra",
     "timestamp": "2025-12-13T04:01:53.589735"
+  },
+  {
+    "type": "github_pr_tracked",
+    "status": "completed",
+    "agent": "github",
+    "description": "Tracked PR #3: Dummy/sync branch",
+    "timestamp": "2025-12-12T23:14:06Z",
+    "pr_number": 3,
+    "pr_state": "closed",
+    "pr_url": "https://github.com/PritamMishra065/autodevops-ai/pull/3"
+  },
+  {
+    "type": "github_pr_tracked",
+    "status": "completed",
+    "agent": "github",
+    "description": "Tracked PR #2: CodeRabbit Generated Unit Tests: Add comprehensive pytest test suite and configuration",
+    "timestamp": "2025-12-12T23:02:59Z",
+    "pr_number": 2,
+    "pr_state": "closed",
+    "pr_url": "https://github.com/PritamMishra065/autodevops-ai/pull/2"
+  },
+  {
+    "type": "github_pr_tracked",
+    "status": "completed",
+    "agent": "github",
+    "description": "Tracked PR #1: chore: add dummy PR placeholder file",
+    "timestamp": "2025-12-12T23:04:26Z",
+    "pr_number": 1,
+    "pr_state": "closed",
+    "pr_url": "https://github.com/PritamMishra065/autodevops-ai/pull/1"
+  },
+  {
+    "type": "github_pr_tracked",
+    "status": "completed",
+    "agent": "github",
+    "description": "Tracked PR #3: Dummy/sync branch",
+    "timestamp": "2025-12-12T23:17:51Z",
+    "pr_number": 3,
+    "pr_state": "closed",
+    "pr_url": "https://github.com/PritamMishra065/autodevops-ai/pull/3"
+  },
+  {
+    "type": "github_pr_tracked",
+    "status": "completed",
+    "agent": "github",
+    "description": "Tracked PR #2: CodeRabbit Generated Unit Tests: Add comprehensive pytest test suite and configuration",
+    "timestamp": "2025-12-12T23:02:59Z",
+    "pr_number": 2,
+    "pr_state": "closed",
+    "pr_url": "https://github.com/PritamMishra065/autodevops-ai/pull/2"
+  },
+  {
+    "type": "github_pr_tracked",
+    "status": "completed",
+    "agent": "github",
+    "description": "Tracked PR #1: chore: add dummy PR placeholder file",
+    "timestamp": "2025-12-12T23:04:26Z",
+    "pr_number": 1,
+    "pr_state": "closed",
+    "pr_url": "https://github.com/PritamMishra065/autodevops-ai/pull/1"
+  },
+  {
+    "type": "github_pr_tracked",
+    "status": "completed",
+    "agent": "github",
+    "description": "Tracked PR #3: Dummy/sync branch",
+    "timestamp": "2025-12-12T23:17:51Z",
+    "pr_number": 3,
+    "pr_state": "closed",
+    "pr_url": "https://github.com/PritamMishra065/autodevops-ai/pull/3"
+  },
+  {
+    "type": "github_pr_tracked",
+    "status": "completed",
+    "agent": "github",
+    "description": "Tracked PR #2: CodeRabbit Generated Unit Tests: Add comprehensive pytest test suite and configuration",
+    "timestamp": "2025-12-12T23:02:59Z",
+    "pr_number": 2,
+    "pr_state": "closed",
+    "pr_url": "https://github.com/PritamMishra065/autodevops-ai/pull/2"
+  },
+  {
+    "type": "github_pr_tracked",
+    "status": "completed",
+    "agent": "github",
+    "description": "Tracked PR #1: chore: add dummy PR placeholder file",
+    "timestamp": "2025-12-12T23:04:26Z",
+    "pr_number": 1,
+    "pr_state": "closed",
+    "pr_url": "https://github.com/PritamMishra065/autodevops-ai/pull/1"
+  },
+  {
+    "type": "run_coderabbit",
+    "status": "failed",
+    "agent": "coderabbit",
+    "timestamp": "2025-12-13T04:55:45.066243"
+  },
+  {
+    "type": "run_cline",
+    "status": "completed",
+    "agent": "cline",
+    "timestamp": "2025-12-13T04:56:11.418108"
+  },
+  {
+    "type": "run_coderabbit",
+    "status": "failed",
+    "agent": "coderabbit",
+    "timestamp": "2025-12-13T04:56:14.099121"
+  },
+  {
+    "type": "run_kestra",
+    "status": "completed",
+    "agent": "kestra",
+    "timestamp": "2025-12-13T04:56:15.533883"
+  },
+  {
+    "type": "run_oumi",
+    "status": "completed",
+    "agent": "oumi",
+    "timestamp": "2025-12-13T04:56:17.014918"
   }
 ]

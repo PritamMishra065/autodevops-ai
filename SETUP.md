@@ -60,3 +60,4 @@ http://localhost:3000
 - Frontend hot-reloads on file changes (Vite HMR)
 - Both servers need to be running simultaneously
 
+
