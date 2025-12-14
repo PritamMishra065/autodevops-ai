@@ -245,3 +245,4 @@ def execute_trout_workflow(inputs=None):
     executor = KestraWorkflowExecutor()
     return executor.execute_workflow("trout_428248", inputs)
 
+
